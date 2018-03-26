@@ -1,0 +1,18 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.statements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
