@@ -1,0 +1,50 @@
+.header-container {
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 1vw 1.5vw;
+    height: 70px;
+    border-bottom: 2px solid #F2F2F2;
+    background: white;
+    overflow: hidden;
+}
+.logo-image {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-links li {
+    display: inline-block;
+    padding: 0 3vw 0 0;
+    font-size: 1em;
+}
+.navbar-links li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #7D7C7D;
+}
+li a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+}
+li a:hover {
+    color: #B6B6B6;
+}
+@media screen and (min-width : 600px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    nav {
+        align-self: center;
+        margin: 0 1em 0 0;
+    }
+}
+
+.hero-image {
+    margin-top: 5vw;
+    background: teal;
+    padding: 10vw;
+    text-align: center;
+}
