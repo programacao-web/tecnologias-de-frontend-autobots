@@ -1,4 +1,4 @@
-.header-container {
+.Header {
     top: 0;
     display: flex;
     position: fixed;
@@ -9,31 +9,31 @@
     background: white;
     overflow: hidden;
 }
-.logo-image {
+.Header-logo {
     width: 70px;
     height: 70px;
 }
-
-.navbar-links li {
-    display: inline-block;
+.Header-links li {
     padding: 0 3vw 0 0;
     font-size: 1em;
 }
-.navbar-links li a {
-    text-decoration: none;
-    list-style-type: none;
+.Header-links li a {
     color: #7D7C7D;
+    text-decoration: none;
 }
-li a.active {
-    color: #000000;
-    border-bottom: 2px solid #000000;
+
+.Header-links li a:active {
+    border-bottom: 2px solid yellow;
     font-weight: 300;
 }
-li a:hover {
+.Header-links li a:hover {
     color: #B6B6B6;
+    border-bottom: 2px solid yellow;
+    font-weight: 300;
 }
+
 @media screen and (min-width : 600px) {
-    .header-container {
+    .Header {
         justify-content: space-between;
     }
     nav {
@@ -42,7 +42,7 @@ li a:hover {
     }
 }
 
-.hero-image {
+.Hero {
     margin-top: 5vw;
     background: teal;
     padding: 10vw;
