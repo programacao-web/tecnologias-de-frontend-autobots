@@ -289,3 +289,31 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.cards {
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+}
+.card {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 20%;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.4);
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
