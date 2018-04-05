@@ -379,6 +379,19 @@ a {
     display: none;
 }
 
+footer {
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.Footer-links a {
+    color: white;
+}
+.Footer-links a:hover {
+    text-decoration: underline white;
+}
+
 /* Tablet */
 @media only screen and (min-width: 600px) {
     .Cards {
@@ -404,6 +417,7 @@ a {
     }
     .Card {
         margin: 30px;
+        width: 25%;
     }
     .Card-image {
         width: 100%;
