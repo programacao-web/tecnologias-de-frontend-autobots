@@ -316,12 +316,15 @@ a {
     padding: 25px;
     background: red;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Card {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    width: 25%;
+    width: 65%;
     transition: 0.3s;
     border-radius: 5px;
     margin: 30px;
@@ -354,7 +357,7 @@ a {
 }
 .Statement-image {
     float: left;
-    width: 100px;
+    width: 50px;
     padding: 10px;
 }
 .Statement-content {
@@ -374,4 +377,43 @@ a {
 
 #Statement-two, #Statement-three{
     display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .Cards {
+        flex-direction: row;
+    }
+    .Card {
+        margin: 15px;
+    }
+
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .Cards {
+        flex-direction: row;
+    }
+    .Card {
+        margin: 30px;
+    }
+    .Card-image {
+        width: 100%;
+    }
+
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
 }
