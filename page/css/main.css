@@ -289,3 +289,145 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+h1, h3 {
+    font-family: 'Lato', sans-serif;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.Informations {
+    padding: 5%;
+    display: inline-block;
+}
+.Information-image{
+    width: 15%;
+}
+.Information-content{
+}
+
+
+.Cards {
+    padding: 25px;
+    background: red;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Card {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 65%;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 30px;
+    align-self: auto;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.4);
+}
+
+.Card-content {
+    padding: 2px 16px;
+}
+
+.Card-image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.Statements {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 2% 0;
+}
+.Statement {
+    display: inline-block;
+    width: auto;
+}
+.Statement-image {
+    float: left;
+    width: 50px;
+    padding: 10px;
+}
+.Statement-content {
+    padding: 10px;
+    float: right;
+    text-align: left;
+}
+.Statement-content h3 p {
+    float: left;
+}
+.Statement-content time {
+    float: right;
+}
+#Statement-one{
+    display: inline-block;
+}
+
+#Statement-two, #Statement-three{
+    display: none;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.Footer-links a {
+    color: white;
+}
+.Footer-links a:hover {
+    text-decoration: underline white;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .Cards {
+        flex-direction: row;
+    }
+    .Card {
+        margin: 15px;
+    }
+
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .Cards {
+        flex-direction: row;
+    }
+    .Card {
+        margin: 30px;
+        width: 25%;
+    }
+    .Card-image {
+        width: 100%;
+    }
+
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
+}
