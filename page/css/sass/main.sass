@@ -1,0 +1,267 @@
+body
+  background-color: #F1EEE9
+
+html
+  color: #222
+  font-size: 1em
+  line-height: 1.4
+
+\::-moz-selection, ::selection
+  background: #b3d4fc
+  text-shadow: none
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 1em 0
+  padding: 0
+
+audio, canvas, iframe, img, svg, video
+  vertical-align: middle
+
+fieldset
+  border: 0
+  margin: 0
+  padding: 0
+
+textarea
+  resize: vertical
+
+.browserupgrade
+  margin: 0.2em 0
+  background: #ccc
+  color: #000
+  padding: 0.2em 0
+
+.hidden
+  display: none !important
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  -webkit-clip-path: inset(50%)
+  clip-path: inset(50%)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  white-space: nowrap
+
+  &.focusable
+    &:active, &:focus
+      clip: auto
+      -webkit-clip-path: none
+      clip-path: none
+      height: auto
+      margin: 0
+      overflow: visible
+      position: static
+      width: auto
+      white-space: inherit
+
+.invisible
+  visibility: hidden
+
+.clearfix
+  &:before
+    content: " "
+    display: table
+
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+@media only screen and (min-width: 35em)
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi)
+
+@media print
+  *
+    background: transparent !important
+    color: #000 !important
+    box-shadow: none !important
+    text-shadow: none !important
+
+    &:before, &:after
+      background: transparent !important
+      color: #000 !important
+      box-shadow: none !important
+      text-shadow: none !important
+
+  a
+    text-decoration: underline
+
+    &:visited
+      text-decoration: underline
+
+    &[href]:after
+      content: " (" attr(href) ")"
+
+  abbr[title]:after
+    content: " (" attr(title) ")"
+
+  a
+    &[href^="#"]:after, &[href^="javascript:"]:after
+      content: ""
+
+  pre
+    white-space: pre-wrap !important
+    border: 1px solid #999
+    page-break-inside: avoid
+
+  blockquote
+    border: 1px solid #999
+    page-break-inside: avoid
+
+  thead
+    display: table-header-group
+
+  tr, img
+    page-break-inside: avoid
+
+  p, h2, h3
+    orphans: 3
+    widows: 3
+
+  h2, h3
+    page-break-after: avoid
+
+h1, h3
+  font-family: 'Lato', sans-serif
+
+li
+  display: inline-block
+  list-style-type: none
+
+a
+  text-decoration: none
+
+.Informations
+  background: #2C9AB7
+  color: white
+  padding: 5%
+  display: inline-block
+
+.Information-image
+  width: 15%
+  
+.Statements
+  background: #2C9AB7
+  color: white
+  text-align: center
+  display: inline-block
+  width: 100%
+  padding: 2% 0
+
+.Statement
+  display: inline-block
+  width: auto
+
+.Statement-image
+  float: left
+  padding: 10px
+  width: 50px
+
+.Statement-content
+  padding: 10px
+  float: right
+  text-align: left
+
+  h3 p
+    float: left
+
+  time
+    float: right
+
+#Statement-one
+  display: inline-block
+
+#Statement-two, #Statement-three
+  display: none
+
+footer
+  background: grey
+  text-align: center
+  padding: 0
+  margin: 0
+
+.Footer-links a
+  color: black
+  &:hover
+    text-decoration: underline white
+
+.Card
+  margin: 10px
+  width: 100%
+
+.Statement
+  display: inline-block
+  width: auto
+
+.Statement-image
+  width: 100px
+
+.Cards
+  padding: 25px
+  background: #D5D5D5
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.Card
+  background: white
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3)
+  width: 65%
+  transition: 0.3s
+  border-radius: 5px
+  margin: 30px
+  align-self: auto
+
+  &:hover
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.4)
+
+.Card-content
+  padding: 2px 16px
+
+.Card-image
+  width: 100%
+  border-radius: 5px 5px 0 0
+
+@media only screen and (min-width: 600px)
+  .Cards
+    flex-direction: row
+
+  .Card
+    margin: 15px
+
+  .Statement
+    display: inline-block
+    width: auto
+
+  .Statement-image
+    width: 100px
+
+@media only screen and (min-width: 768px)
+  .Cards
+    flex-direction: row
+
+  .Card
+    margin: 30px
+    width: 25%
+
+  .Card-image
+    width: 100%
+
+  .Statement
+    display: inline-block
+    width: auto
+
+  .Statement-image
+    width: 100px

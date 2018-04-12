@@ -1,0 +1,60 @@
+.Header
+  top: 0
+  display: flex
+  position: fixed
+  width: 100%
+  padding: 1vw 1.5vw
+  height: 70px
+  border-bottom: 2px solid #F2F2F2
+  background: white
+  overflow: hidden
+
+.Header-logo
+  width: 70px
+  height: 70px
+
+.Header-links li
+  padding: 0 3vw 0 0
+  font-size: 1em
+
+  a
+    color: #7D7C7D
+    text-decoration: none
+
+    &:active
+      border-bottom: 2px solid yellow
+      font-weight: 300
+
+    &:hover
+      border-bottom: 2px solid yellow
+      font-weight: 300
+
+@media screen and (min-width: 600px)
+  .Header
+    justify-content: space-between
+
+  nav
+    align-self: center
+    margin: 0 1em 0 0
+
+.Hero
+  margin-top: 15vw
+  padding: 10vw
+  text-align: center
+
+@media screen and (min-width: 600px)
+  .Hero
+    margin-top: 5vw
+    padding: 10vw
+    text-align: center
+
+.btn
+  background-color: #2C9AB7
+  color: white
+  font-size: 16px
+  margin: 15px
+  padding: 12px 20px
+  border: none
+  cursor: pointer
+  border-radius: 5px
+  text-align: center
