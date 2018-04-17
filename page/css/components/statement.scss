@@ -1,45 +1,36 @@
 .Statements {
-    padding: 2% 0;
-    text-align: center;
+    padding: 2%;
 }
+
 .Statement {
-    background: yellow;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
 .Statement-image {
-    float: left;
-    width: 50px;
-    padding: 10px;
+    width: 10%;
+    height: 10%;
+    padding: 2%;
 }
+
 .Statement-content {
     padding: 10px;
-    text-align: left;
 }
+
 .Statement-content h3 p {
     float: left;
 }
+
 .Statement-content time {
     float: right;
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
-    .Statement {
-        display: inline-block;
-        width: auto;
-    }
-    .Statement-image {
-        width: 100px;
-    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-    .Statement {
-        display: inline-block;
-        width: auto;
-    }
-    .Statement-image {
-        width: 100px;
-    }
 }
