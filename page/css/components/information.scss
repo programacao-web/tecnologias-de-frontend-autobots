@@ -7,7 +7,7 @@
 
 .Information{
     background: $background-color-primary;
-    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.4);
+    box-shadow: $shadow-strong;
     padding: 5%;
 }
 
@@ -22,7 +22,7 @@
     text-align: left;
 }
 
-#Information-first {
+#Information-second {
     background: $background-color-secondary;
 }
 
