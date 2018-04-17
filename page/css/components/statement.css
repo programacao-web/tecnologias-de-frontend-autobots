@@ -1,0 +1,45 @@
+.Statements {
+    padding: 2% 0;
+    text-align: center;
+}
+.Statement {
+    background: yellow;
+    position: relative;
+}
+.Statement-image {
+    float: left;
+    width: 50px;
+    padding: 10px;
+}
+.Statement-content {
+    padding: 10px;
+    text-align: left;
+}
+.Statement-content h3 p {
+    float: left;
+}
+.Statement-content time {
+    float: right;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .Statement {
+        display: inline-block;
+        width: auto;
+    }
+    .Statement-image {
+        width: 100px;
+    }
+}

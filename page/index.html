@@ -11,10 +11,14 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/old/normalize.css">
+        <link rel="stylesheet" href="css/old/main.css">
+        <link rel="stylesheet" href="css/old/header.css">
+        <link rel="stylesheet" href="css/old/footer.css">
+        <link rel="stylesheet" href="css/components/cards.css">
+        <link rel="stylesheet" href="css/components/information.css">
+        <link rel="stylesheet" href="css/components/statement.css">
+        <link rel="stylesheet" href="css/components/carousel.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body>
@@ -136,7 +140,8 @@
             </section>
 
             <section class="Statements">
-                <article class="Statement" id="Statement-one">
+                <article class="Statement">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -147,9 +152,11 @@
                         <h3>Nome 01</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </article>
 
-                <article class="Statement" id="Statement-two">
+                <article class="Statement">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -157,12 +164,14 @@
                     />
                     <div class="Statement-content">
                         <time date  time="2018-04-25">25 Março 2018</time>
-                        <h3>Nome 01</h3>
+                        <h3>Nome 02</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </article>
-
-                <article class="Statement" id="Statement-three">
+                
+                <article class="Statement">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -170,13 +179,13 @@
                     />
                     <div class="Statement-content">
                         <time date  time="2018-04-25">25 Março 2018</time>
-                        <h3>Nome 01</h3>
+                        <h3>Nome 03</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </article>
             </section>
         </main>
-
         <footer>
             <nav class="Footer-links">
                 <ul>

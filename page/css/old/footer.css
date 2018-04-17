@@ -1,0 +1,12 @@
+footer {
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.Footer-links a {
+    color: white;
+}
+.Footer-links a:hover {
+    text-decoration: underline white;
+}
