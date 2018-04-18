@@ -1,0 +1,46 @@
+.prev, .next {
+  cursor: pointer;
+  margin: 3%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+}
+
+@keyframes fade {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes fade{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fade{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fade{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+  -webkit-animation: fade 1s infinite;
+  -moz-animation: fade 1s infinite;
+  -o-animation: fade 1s infinite;
+  animation: fade 1s infinite;
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next {
+    font-size: 11px
+  }
+}

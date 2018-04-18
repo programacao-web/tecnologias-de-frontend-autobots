@@ -11,10 +11,7 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     <body>
@@ -26,19 +23,19 @@
             >
             <nav>
                 <ul class="Header-links">
-                    <li><a activated href="">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
+                    <li><a activated href=".Hero">Hero</a></li>
+                    <li><a href=".Informations">Informations</a></li>
+                    <li><a href=".Cards">Cards</a></li>
+                    <li><a href=".Statements">Statements</a></li>
                 </ul>
             </nav>
         </header>
         
-        <section class="Hero">
+        <section class="Hero parallax">
             <article class="Hero-content">
                 <h1>THE ULTIMATE LANDING PAGE</h1>
-                <button>Start</button>
-                <p>
+                <a href=".Informations"><button>Start</button></a>
+                <p class="Hero-text">
                     An open-source, on-premises bot framework that saves 
                     <strong>thousands of developers</strong> thousands of hours.
                 </p>
@@ -47,14 +44,14 @@
 
         <main>
             <section class="Informations">
-                <article>
+                <article class="Information" id="Information-first">
                     <img
                         class="Information-image"
                         src="img/placeholder.png"
                         alt="information-image-1"
                     >
                     <div class="Information-content">
-                        <h1>Text Title</h1>
+                        <h1 class="Information-title">TITLE</h1>
                         <p>
                             Lorem ipsum dolor sit amet, mel utamur numquam electram ad,
                             mea ea sensibus definiebas voluptatibus. Id nisl oblique maluisset vim.
@@ -65,14 +62,9 @@
                         </p>
                     </div>
                 </article>
-                <article>
-                    <img
-                        class="Information-image"
-                        src="img/placeholder.png"
-                        alt="information-image-1"
-                    >
+                <article class="Information"  id="Information-second">
                     <div class="Information-content">
-                        <h1>Text Title</h1>
+                        <h1 class="Information-title">TITLE</h1>
                         <p>
                             Lorem ipsum dolor sit amet, mel utamur numquam electram ad,
                             mea ea sensibus definiebas voluptatibus. Id nisl oblique maluisset vim.
@@ -82,61 +74,59 @@
                             mea ea sensibus definiebas voluptatibus. Id nisl oblique maluisset vim.
                         </p>
                     </div>
+                    <img
+                        class="Information-image"
+                        src="img/placeholder.png"
+                        alt="information-image-1"
+                    >
                 </article>
             </section>
 
             <section class="Cards">
                 <article class="Card">
+                    <h3 class="Title-card">LIVE CHAT</h3>
                     <img
                         class="Card-image"
-                        src="img/placeholder.png"
+                        src="img/chat.png"
                         alt="card-image-1"
                     >
-                    <div class="Card-content">
-                        <h3>Card 1</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, mel utamur numquam electram ad,
-                            mea ea sensibus definiebas voluptatibus. Id nisl oblique
-                            maluisset vim.
-                        </p>
-                    </div>
+                    <p class="Title-card">
+                        Talk to your costomers without any problems to help 
+                        them improve there problems.
+                    </p>
+                    
                 </article>
 
                 <article class="Card">
+                    <h3 class="Title-card">REAL TIME</h3>
                     <img
                         class="Card-image"
-                        src="img/placeholder.png"
-                        alt="Card-image-1"
+                        src="img/chart.png"
+                        alt="card-image-1"
                     >
-                    <div class="Card-content">
-                        <h3>Card 2</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, mel utamur numquam electram ad,
-                            mea ea sensibus definiebas voluptatibus. Id nisl oblique
-                            maluisset vim.
-                        </p>
-                    </div>
+                    <p class="Title-card">
+                        Understante who your customers are and get deeper 
+                        insights on they are doing
+                    </p>
                 </article>
 
                 <article class="Card">
+                    <h3 class="Title-card">USER ANALITICS</h3>
                     <img
                         class="Card-image"
-                        src="img/placeholder.png"
-                        alt="Card-image-1"
+                        src="img/worldwide.png"
+                        alt="card-image-1"
                     >
-                    <div class="Card-content">
-                        <h3>Card 3</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, mel utamur numquam electram ad,
-                            mea ea sensibus definiebas voluptatibus. Id nisl oblique
-                            maluisset vim.
-                        </p>
-                    </div>
+                    <p class="Title-card">
+                        TYou always can find free locations for your customers
+                            and undertand your needs
+                    </p>
                 </article>
             </section>
 
             <section class="Statements">
-                <article class="Statement" id="Statement-one">
+                <article class="Statement fade">
+                    <a class="prev" onclick="renderCarousel(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -147,9 +137,11 @@
                         <h3>Nome 01</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="renderCarousel(1)">&#10095;</a>
                 </article>
 
-                <article class="Statement" id="Statement-two">
+                <article class="Statement fade">
+                    <a class="prev" onclick="renderCarousel(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -157,12 +149,14 @@
                     />
                     <div class="Statement-content">
                         <time date  time="2018-04-25">25 Março 2018</time>
-                        <h3>Nome 01</h3>
+                        <h3>Nome 02</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="renderCarousel(1)">&#10095;</a>
                 </article>
-
-                <article class="Statement" id="Statement-three">
+                
+                <article class="Statement fade">
+                    <a class="prev" onclick="renderCarousel(-1)">&#10094;</a>
                     <img
                         class="Statement-image"
                         src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png"
@@ -170,14 +164,14 @@
                     />
                     <div class="Statement-content">
                         <time date  time="2018-04-25">25 Março 2018</time>
-                        <h3>Nome 01</h3>
+                        <h3>Nome 03</h3>
                         <p>Lorem ipsum dolor sit amet, mel utamur numquam electram ad</p>
                     </div>
+                    <a class="next" onclick="renderCarousel(1)">&#10095;</a>
                 </article>
             </section>
         </main>
-
-        <footer>
+        <footer> 
             <nav class="Footer-links">
                 <ul>
                     <li><a href="https://en.wikipedia.org/wiki/Ranked_pairs">Ranked Pairs</a></li>
@@ -192,7 +186,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/carousel.js"></script>
 
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

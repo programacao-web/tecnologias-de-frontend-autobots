@@ -1,0 +1,38 @@
+.Statements {
+    padding: 2%;
+    background: $background-color-secondary;
+    box-shadow: $shadow-strong;
+}
+
+.Statement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Statement-image {
+    width: 10%;
+    height: 10%;
+    padding: 2%;
+}
+
+.Statement-content {
+    padding: 10px;
+}
+
+.Statement-content h3 p {
+    float: left;
+}
+
+.Statement-content time {
+    float: right;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+}
