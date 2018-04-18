@@ -7,9 +7,8 @@
   align-items: center; }
 
 .Card {
-  background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  width: 65%;
+  width: auto;
   transition: 0.3s;
   border-radius: 5px;
   margin: 30px;
@@ -18,11 +17,14 @@
 .Card:hover {
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.4); }
 
-.Card-content {
-  padding: 2px 16px; }
+.Title-card {
+  background: #ff9a11;
+  color: #FFFFFF;
+  padding: 5%;
+  margin: 0; }
 
 .Card-image {
-  width: 100%;
+  width: 50%;
   border-radius: 5px 5px 0 0; }
 
 /* Tablet */
@@ -39,10 +41,12 @@
 
   .Card {
     margin: 30px;
-    width: 25%; }
+    width: 20%;
+    height: auto; }
 
   .Card-image {
-    width: 100%; } }
+    width: 50%;
+    margin: 15% 0; } }
 .Header {
   top: 0;
   display: flex;
@@ -68,11 +72,11 @@
   text-decoration: none; }
 
 .Header-links li a:active {
-  border-bottom: 3px solid yellow; }
+  border-bottom: 3px solid #ff9a11; }
 
 .Header-links li a:hover {
-  color: black;
-  border-bottom: 3px solid yellow; }
+  color: #7D7C7D;
+  border-bottom: 3px solid #ff9a11; }
 
 @media screen and (min-width: 600px) {
   .Header {
@@ -82,15 +86,19 @@
     align-self: center;
     margin: 0 1em 0 0; } }
 footer {
-  background: black;
+  display: flex;
   text-align: center;
-  color: white; }
+  color: #7D7C7D; }
 
 .Footer-links a {
-  color: white; }
+  color: #7D7C7D; }
+
+.Footer-links a {
+  color: #7D7C7D; }
 
 .Footer-links a:hover {
-  text-decoration: underline white; }
+  color: #7D7C7D;
+  border-bottom: 3px solid #ff9a11; }
 
 .Statements {
   padding: 2%;
@@ -137,6 +145,9 @@ footer {
   flex-direction: column;
   text-align: left; }
 
+.Information-title {
+  color: #ff9a11; }
+
 #Information-second {
   background: #FAFAFA; }
 
@@ -175,13 +186,16 @@ footer {
     margin-right: 5%; } }
 .Hero {
   margin-top: 5vw;
-  background: #FAFAFA;
   padding: 10vw;
-  text-align: center; }
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20vw;
+  color: #FFFFFF; }
 
 button {
-  border: 2px solid yellow;
-  color: black;
+  border: 2px solid #ff9a11;
+  color: #7D7C7D;
+  background: #FAFAFA;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -197,8 +211,27 @@ button {
   color: black; }
 
 button:hover {
-  background-color: #008CBA;
-  color: white; }
+  background-color: #ff9a11;
+  color: #FFFFFF; }
+
+.Hero-text {
+  color: #FFFFFF; }
+
+/* Tablet */
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .Hero h1 {
+    font-size: 3em; }
+
+  .Hero {
+    margin-top: 0; } }
+.parallax {
+  background-image: url("../img/predios.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .prev, .next {
   cursor: pointer;

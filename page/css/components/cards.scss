@@ -1,3 +1,5 @@
+@import '../settings/colors.scss';
+
 .Cards {
     padding: 25px;
     text-align: center;
@@ -7,9 +9,8 @@
     align-items: center;
 }
 .Card {
-    background: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    width: 65%;
+    width: auto;
     transition: 0.3s;
     border-radius: 5px;
     margin: 30px;
@@ -20,12 +21,15 @@
     box-shadow: 0 8px 30px 0 rgba(0,0,0,0.4);
 }
 
-.Card-content {
-    padding: 2px 16px;
+.Title-card {
+    background: $detail-color;
+    color: $text-color-secondary;
+    padding: 5%;
+    margin: 0;
 }
 
 .Card-image {
-    width: 100%;
+    width: 50%;
     border-radius: 5px 5px 0 0;
 }
 
@@ -47,9 +51,11 @@
     }
     .Card {
         margin: 30px;
-        width: 25%;
+        width: 20%;
+        height: auto;
     }
     .Card-image {
-        width: 100%;
+        width: 50%;
+        margin: 15% 0;
     }
 }

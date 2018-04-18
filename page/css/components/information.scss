@@ -21,6 +21,9 @@
     flex-direction: column;
     text-align: left;
 }
+.Information-title {
+    color: $detail-color
+}
 
 #Information-second {
     background: $background-color-secondary;

@@ -1,12 +1,16 @@
 footer {
-    background: black;
+    display: flex;
     text-align: center;
-    color: white;
+    color: $primary;
 }
 
 .Footer-links a {
-    color: white;
+    color: $primary;   
+}
+.Footer-links a {
+    color: $primary;   
 }
 .Footer-links a:hover {
-    text-decoration: underline white;
+    color: $primary;
+    border-bottom: 3px solid $detail-color;
 }
